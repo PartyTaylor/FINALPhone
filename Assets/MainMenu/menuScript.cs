@@ -34,7 +34,7 @@ public class menuScript : MonoBehaviour
 
     public void StartLevel()
     {
-        SceneManager.LoadScene("overworld");
+        SceneManager.LoadScene("loading1");
     }
     public void ExitGame()
     {
