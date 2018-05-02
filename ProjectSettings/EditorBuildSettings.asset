@@ -9,5 +9,8 @@ EditorBuildSettings:
     path: Assets/MainMenu.unity
     guid: 6cba9c5450e31cd46a88c0ee77d723bf
   - enabled: 1
+    path: Assets/MainMenu/loading1.unity
+    guid: 31658ad98530143419f25a02b2b3994c
+  - enabled: 1
     path: Assets/overworld.unity
     guid: 6e4ab104922fd0b4a8460d835c1c3a1c
