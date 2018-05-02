@@ -20,6 +20,7 @@ public class PhoneLight : MonoBehaviour
     {
         Plight = GetComponent<Light>();
         Plight.enabled = false;
+        batteryLife = 100;
     }
 
     /*public static void depleteBat(float amount)
