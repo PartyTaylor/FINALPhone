@@ -304,6 +304,7 @@
     <Compile Include="Assets\DungeonModules\Scripts\DoorAOpen.cs" />
     <Compile Include="Assets\MainMenu\menuScript.cs" />
     <Compile Include="Assets\Scripts\Death.cs" />
+    <Compile Include="Assets\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\ItemCounter.cs" />
     <Compile Include="Assets\Scripts\MonsterFollow.cs" />

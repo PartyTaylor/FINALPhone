@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -47,7 +49,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 	            if (Input.GetKey(RunKey))
 	            {
 		            CurrentTargetSpeed *= RunMultiplier;
-		            m_Running = true;
+                    //if()
+                    m_Running = true;
 	            }
 	            else
 	            {
@@ -123,6 +126,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_RigidBody = GetComponent<Rigidbody>();
             m_Capsule = GetComponent<CapsuleCollider>();
             mouseLook.Init (transform, cam.transform);
+            //stam = GameObject.FindGameObjectWithTag("Player").GetComponent <Staminabar>{ }
         }
 
 

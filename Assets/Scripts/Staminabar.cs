@@ -18,6 +18,7 @@ public class Staminabar : MonoBehaviour {
     public float walkspeed = 1f;
 
     public bool run;
+    public bool cRun;
 
     // Use this for initialization
     void Start ()
@@ -27,16 +28,17 @@ public class Staminabar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        cRun = true;
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            run = true; 
+            run = true;
             if (stamina == 0)
             {
                 run = false;
                 cm.Move(move * walkspeed * Time.deltaTime);
                 Update();
             }
+            
         }
         if(Input.GetKeyUp(KeyCode.LeftShift))
         {
@@ -63,4 +65,10 @@ public class Staminabar : MonoBehaviour {
             currentstamina.rectTransform.localScale = new Vector3(ratio, 1, 1);
         }
 	}
+
+    public bool canRun()
+    {
+        return run;
+    }
+    
 }

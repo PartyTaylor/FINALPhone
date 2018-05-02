@@ -4162,6 +4162,18 @@ Prefab:
       propertyPath: m_UseHeadBob
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_WalkSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 14300000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
@@ -9453,7 +9465,8 @@ MonoBehaviour:
   maxstamina: 100
   currentstamina: {fileID: 149743804}
   walkspeed: 5
-  run: 0
+  run: 1
+  cRun: 0
 --- !u!1 &1310981469 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 181752, guid: 34b237876876baf4fa134407d8dc57d5, type: 2}
