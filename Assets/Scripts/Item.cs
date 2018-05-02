@@ -5,8 +5,13 @@ using UnityEngine;
 public class Item : MonoBehaviour {
 
     public bool buttonInRanged;
+    public PhoneLight battery;
     private bool played = false;
     //private static float minusbat = 10;
+    private void Start()
+    {
+
+    }
 
     void OnTriggerEnter(Collider col)
     {
@@ -36,6 +41,7 @@ public class Item : MonoBehaviour {
                     //PhoneLight.depleteBat(minusbat);
                     Destroy(gameObject);
                     played = true;
+                    battery.gotNewItem();
                 }
                 
             }

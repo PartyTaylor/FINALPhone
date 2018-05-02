@@ -70,4 +70,17 @@ public class PhoneLight : MonoBehaviour
 
         }
     }
+
+    public void gotNewItem()
+    {
+        batteryLife -= 15;
+        float ratio = batteryLife / maxbatteryLife;
+        currentBatteryLife.rectTransform.localScale = new Vector3(ratio, 1, 1);
+        Batratio.text = batteryLife.ToString("0.00") + '%';
+    }
+
+    public float getBattery()
+    {
+        return batteryLife;
+    }
 }

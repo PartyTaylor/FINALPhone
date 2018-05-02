@@ -24,6 +24,7 @@ public class Staminabar : MonoBehaviour {
     void Start ()
     {
         cm = gameObject.GetComponent<CharacterController>();
+        run = false;
 	}
 	
 	// Update is called once per frame
@@ -51,7 +52,7 @@ public class Staminabar : MonoBehaviour {
             float ratio = stamina / maxstamina;
             currentstamina.rectTransform.localScale = new Vector3(ratio, 1, 1);
         }
-        if (run == false && stamina >= 0)
+        if (run == false && stamina >= 0 && stamina <= 100)
         {
             stamina += Time.deltaTime * 2;
             float ratio = stamina / maxstamina;
@@ -64,6 +65,7 @@ public class Staminabar : MonoBehaviour {
             float ratio = stamina / maxstamina;
             currentstamina.rectTransform.localScale = new Vector3(ratio, 1, 1);
         }
+        
 	}
 
     public bool canRun()

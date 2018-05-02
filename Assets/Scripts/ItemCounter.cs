@@ -12,7 +12,8 @@ public class ItemCounter : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-
+        count = 0;
+        tcount = 0;
     }
 
     public void OnTriggerEnter(Collider col)
@@ -64,5 +65,10 @@ public class ItemCounter : MonoBehaviour {
                 played = false;
             }
         }
+    }
+
+    public int getTotalItem()
+    {
+        return tcount;
     }
 }
