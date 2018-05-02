@@ -13,12 +13,14 @@ public class TestFollow : MonoBehaviour
     public int currentTotal;
     public PhoneLight battery;
     public float speed;
+    public float baseSpeed;
     private void Start()
     {
         count = GameObject.FindGameObjectWithTag("Player").GetComponent<ItemCounter>();
         agent = GetComponent<NavMeshAgent>();
         currentTotal = 0;
         speed = agent.speed;
+        baseSpeed = speed;
     }
 
     void Update()
@@ -26,12 +28,12 @@ public class TestFollow : MonoBehaviour
         total = count.getTotalItem();
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
         agent.destination = player.position;
-        speed = (100 - battery.getBattery()) / 100 + speed;
+        speed = ((100 - battery.getBattery()) / 100 ) * 5 + baseSpeed;
         agent.speed = speed;
-        if (total >= currentTotal)
-        {
-            currentTotal = total;
-            agent.speed = agent.speed * 2;
-        }
+    }
+
+    private void FixedUpdate()
+    {
+        
     }
 }
