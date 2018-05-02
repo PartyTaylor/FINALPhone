@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{FBA17B6D-0803-4BA7-8620-A6ED1C9A4599}</ProjectGuid>
+    <ProjectGuid>{1F156275-1575-B6F0-A0CA-773EEEBF2F9E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,17 +63,22 @@
      <Compile Include="Assets\AssetStore\RainMaker\Prefab\RainScript2D.cs" />
      <Compile Include="Assets\DungeonModules\Scripts\DoorAOpen.cs" />
      <Compile Include="Assets\MainMenu\menuScript.cs" />
+     <Compile Include="Assets\Scripts\Death.cs" />
      <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\ItemCounter.cs" />
+     <Compile Include="Assets\Scripts\MonsterFollow.cs" />
+     <Compile Include="Assets\Scripts\MoveTo.cs" />
      <Compile Include="Assets\Scripts\PhoneLight.cs" />
+     <Compile Include="Assets\Scripts\SafeCircle.cs" />
      <Compile Include="Assets\Scripts\Staminabar.cs" />
+     <Compile Include="Assets\Scripts\TestFollow.cs" />
      <None Include="Assets\Smartphone\StandardColorMask.shader" />
      <None Include="Assets\AssetStore\RainMaker\Prefab\RainShader.shader" />
      <None Include="Assets\AssetStore\Mega Fantasy Props Pack\README.txt" />
      <None Include="Assets\AssetStore\RainMaker\Readme.txt" />
      <None Include="Assets\AssetStore\Fantasy Bridges\Modular Fantasy Bridges\README.txt" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/Administrator/Documents/GitHub/ProjectPhone/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/Administrator/Documents/GitHub/FINALPhone/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -180,7 +185,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{891B5F13-4136-6584-3CEA-BBABD9D8806B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{EB2C35EE-FC72-F4A0-2C61-9F9F74E9F20E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
