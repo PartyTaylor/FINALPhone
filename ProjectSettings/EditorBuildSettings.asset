@@ -17,6 +17,3 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MainMenu/loading2.unity
     guid: 042bd5e06ce05924d8381bb7a3c1bcb8
-  - enabled: 1
-    path: Assets/basement.unity
-    guid: 549a645eccb29e547b043bc773d225b4

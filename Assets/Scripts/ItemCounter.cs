@@ -9,9 +9,6 @@ public class ItemCounter : MonoBehaviour {
     private bool played = false;
     public bool playing = false;
 
-    public bool got = false;
-    public bool near = false;
-
     // Use this for initialization
     void Start()
     {
@@ -24,16 +21,6 @@ public class ItemCounter : MonoBehaviour {
         if (col.gameObject.tag == "count")
         {
             playing = true;
-            near = true;
-            got = false;
-        }
-    }
-
-    public void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "count")
-        {
-            near = false;
         }
     }
 
@@ -55,7 +42,7 @@ public class ItemCounter : MonoBehaviour {
         {
             GUI.Box(new Rect((Screen.width / 2) - 100, 10, 200, 35), " " + count + " items found. Just one more!");
         }
-        if (tcount >= 4)
+        if (tcount == 4)
         {
             GUI.Box(new Rect((Screen.width / 2) - 100, 10, 350, 35), "You have found all the items! Hurry to the house!");
         }
@@ -64,20 +51,18 @@ public class ItemCounter : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (near == true)
+        if (playing == true)
         {
             if (Input.GetKey("e"))
             {
-                if (!got)
+                if (!played)
                 {
                     count = count + 1;
                     Debug.Log("You picked up a ritual item. Item = " + count);
                     played = true;
-                    got = true;
                     tcount++;
                 }
-                else
-                    played = false;
+                played = false;
             }
         }
     }
