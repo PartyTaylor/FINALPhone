@@ -312,6 +312,7 @@
     <Compile Include="Assets\Scripts\MonsterFollow.cs" />
     <Compile Include="Assets\Scripts\MoveTo.cs" />
     <Compile Include="Assets\Scripts\PhoneLight.cs" />
+    <Compile Include="Assets\Scripts\Ritual.cs" />
     <Compile Include="Assets\Scripts\SafeCircle.cs" />
     <Compile Include="Assets\Scripts\Staminabar.cs" />
     <Compile Include="Assets\Scripts\TestFollow.cs" />
