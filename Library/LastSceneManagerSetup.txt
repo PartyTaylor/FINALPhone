@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/overworld.unity
-=======
-- path: Assets/basement.unity
->>>>>>> 4449d749b7b61a0461d7f2019063aeba0fcc5c79
   isLoaded: 1
   isActive: 1
